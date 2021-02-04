@@ -1,8 +1,12 @@
+# escape=`
+
 FROM shaleenchughacr.azurecr.io/vsbuildtools:20210202.10 AS builder
 
-#RUN mkdir C:\src
+RUN mkdir C:\src
 
-COPY .\ C:\src
+WORKDIR C:\src
+
+COPY . .
 
 ARG BUILD_VERBOSITY=minimal
 ARG BUILD_CONFIGURATION=Release
