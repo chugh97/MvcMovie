@@ -4,6 +4,8 @@ FROM shaleenchughacr.azurecr.io/vsbuildtools:20210202.10 AS builder
 
 RUN mkdir C:\src
 
+RUN mkdir C:\out
+
 WORKDIR C:\src
 
 COPY . .
