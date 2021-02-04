@@ -15,4 +15,4 @@ ARG BUILD_CONFIGURATION=Release
 
 RUN dotnet build C:\src\MvcMovie.csproj
 
-RUN dotnet publish C:\out
+RUN dotnet publish C:\src\MvcMovie.csproj -o C:\out
