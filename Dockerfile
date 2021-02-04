@@ -1,6 +1,6 @@
 FROM shaleenchughacr.azurecr.io/vsbuildtools:20210202.10 AS builder
 
-RUN mkdir C:\src
+#RUN mkdir C:\src
 
 COPY .\ C:\src
 
